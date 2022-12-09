@@ -1,10 +1,10 @@
-import Products from "../Product/Product";
-const ProductList = ({ productos }) => {
+import Product from "../Product/Product";
+const ProductList = ({ products }) => {
   return (
     <div className="Prod">
       {
-      productos.map(productos => 
-      <Products key={productos.id} productos={productos} />
+      products.map(products => 
+      <Product key={products.id} products={products} />
       )}
     </div>
   );

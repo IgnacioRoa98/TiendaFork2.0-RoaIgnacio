@@ -4,7 +4,7 @@ import ProductsList from "../ProductList/ProductList";
 import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
-  const [productos, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
   const { categoryId } = useParams();
  useEffect(() => {
     if (categoryId) {
@@ -25,7 +25,7 @@ const ItemListContainer = () => {
   return (
     <div>
       <h1>LISTADO DE PRODUCTOS</h1>
-      <ProductsList productos={productos} />
+      <ProductsList products={products} />
     </div>
   );
 };

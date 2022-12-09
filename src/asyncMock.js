@@ -1,4 +1,4 @@
-const productos = [
+const products = [
   {
     id: "1",
     name: "Straps",
@@ -52,7 +52,7 @@ const productos = [
 export const getProducts = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(productos);
+      resolve(products);
     }, 500);
   });
 };
@@ -61,7 +61,7 @@ export const getProductsById = (id) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(
-        productos.find((prod) => {
+        products.find((prod) => {
           return prod.id === id;
         })
       );
@@ -72,7 +72,7 @@ export const getProductsById = (id) => {
 export const getProductsByCategory = (categoryId) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(productos.filter((prod) => prod.category === categoryId));
+      resolve(products.filter((prod) => prod.category === categoryId));
     }, 500);
   });
 };
