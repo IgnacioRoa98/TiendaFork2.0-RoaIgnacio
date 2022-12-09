@@ -1,3 +1,4 @@
+import styleCount from "../Contador/styleCount.css"
 import { useState } from "react";
 const Contador = ({ inicio, stock, onAdd }) => {
   const [count, setCount] = useState(inicio);

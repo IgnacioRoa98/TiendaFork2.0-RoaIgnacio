@@ -1,3 +1,4 @@
+import styleProduct from "../Product/styleProduct.css"
 import { Link } from "react-router-dom";
 const Products = ({ products }) => {
   return (

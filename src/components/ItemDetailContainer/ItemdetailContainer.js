@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getProductById } from "../../asyncMock";
+import { getProductsById } from "../../asyncMock";
 import { useParams } from "react-router-dom";
 import Contador from "../Contador/Contador";
 
@@ -7,7 +7,7 @@ const ItemDetailContainer = () => {
   const [products, setProducts] = useState({});
   const { productId } = useParams();
   useEffect(() => {
-    getProductById(productId)
+    getProductsById(productId)
       .then((response) => {
         setProducts(response);
       })
