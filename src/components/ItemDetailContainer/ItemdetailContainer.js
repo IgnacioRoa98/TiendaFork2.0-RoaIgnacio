@@ -1,7 +1,9 @@
+import Contador from "../Contador/Contador";
+import styleItemDetailContainer from "../ItemDetailContainer/styleItemDetailContainer.css";
 import { useState, useEffect } from "react";
 import { getProductsById } from "../../asyncMock";
 import { useParams } from "react-router-dom";
-import Contador from "../Contador/Contador";
+
 
 const ItemDetailContainer = () => {
   const [products, setProducts] = useState({});
@@ -15,18 +17,19 @@ const ItemDetailContainer = () => {
         console.log(error);
       });
   }, [productId]);
+ 
 
   return (
     <div>
-      <h1>DETALLE DEL PRODUCTO</h1>
+      <h1 className="tit">DETALLE DEL PRODUCTO</h1>
       <div>
-        <h1>{products.title}</h1>
-        <img src={products.img} alt={products.description} />
-        <p>{products.description}</p>
-        <p>{products.category}</p>
-        <h2>$ {products.precio}</h2>
-        <Contador stock={products.stock} />
-      </div>
+      <h1>{products.title}</h1>
+      <img src={products.img} alt={products.description} className="imgDesc" />
+      <p className="descr">{products.description}</p>
+      <p className="class">{products.category}</p>
+      <h2 className="price">${products.price}</h2>
+      <Contador stock={products.stock} count={0} />
+    </div>
     </div>
   );
 };
