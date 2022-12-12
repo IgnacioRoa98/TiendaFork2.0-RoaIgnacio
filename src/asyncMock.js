@@ -23,7 +23,7 @@ const products = [
     id: "3",
     name: "Guantes de Boxeo",
     price: 47000,
-    category: "Guantes",
+    category: "Accesorio",
     img: "/images/guante.jpeg",
     stock: 12,
     description:
@@ -44,7 +44,7 @@ const products = [
     price: 70000,
     category: "Zapatillas",
     img: "/images/zapatilla.jpg",
-    stock: 2,
+    stock: 0,
     description: "Zapatilla Jordan 1 Mid, colorwey orange.",
   },
 ];

@@ -1,9 +1,8 @@
-.bot{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    margin-left: 30px;
-    color: white;
-  }
-  
+.bot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-left: 30px;
+  color: white;
+}

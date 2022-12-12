@@ -2,14 +2,14 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Carrito from "../Carrito/Carrito";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
     <div>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand as={Link} to="/">
             <img
               alt=""
               src="../images/log.png"
@@ -18,12 +18,12 @@ function NavBar() {
               className="d-inline-block align-top"
             />
             TIENDA DEPORTIVA FORK
-          </Navbar.Brand>
+          </Navbar.Brand >
           <Nav className="me-auto">
-            <Nav.Link href="#home">INICIO</Nav.Link>
-            <Nav.Link to= "/categoria/accesorios ">ACCESORIOS</Nav.Link>
-            <Nav.Link to= "/categoria/colchonetas">COLCHONETAS</Nav.Link>
-            <Nav.Link href="#pricing">ZAPATILLAS</Nav.Link>
+            <Nav.Link as={Link} to="/" >INICIO</Nav.Link>
+            <Nav.Link as={Link} to="/category/Accesorio">ACCESORIOS</Nav.Link>
+            <Nav.Link as={Link} to="/category/Colchoneta">COLCHONETAS</Nav.Link>
+            <Nav.Link as={Link} to="/category/Zapatillas">ZAPATILLAS</Nav.Link>
           </Nav>
           <Carrito />
         </Container>

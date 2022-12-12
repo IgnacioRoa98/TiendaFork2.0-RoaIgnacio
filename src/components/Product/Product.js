@@ -1,4 +1,4 @@
-import styleProduct from "../Product/styleProduct.css"
+import styleProduct from "../Product/styleProduct.css";
 import { Link } from "react-router-dom";
 const Products = ({ products }) => {
   return (
@@ -11,4 +11,5 @@ const Products = ({ products }) => {
     </div>
   );
 };
+
 export default Products;

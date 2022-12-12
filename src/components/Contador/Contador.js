@@ -17,7 +17,7 @@ const Contador = ({ stock, onAdd }) => {
       <button onClick={() => Decrecer()}>-</button>
       <h2>{count}</h2>
       <button onClick={() => Crece()}>+</button>
-      <button onClick={()=> onAdd(count)} > Agregar al carrito</button>
+      <button onClick={() => onAdd(count)}> Agregar al carrito</button>
     </div>
   );
 };
